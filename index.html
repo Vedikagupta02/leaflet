@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Book Rental Service</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
@@ -17,8 +17,8 @@
       <h2>About Us</h2>
       <p>We provide books for rent.<br>
         ₹10 per book for 1 week <br>
-         ₹60 per month subscription <br>
-         Browse from our collection and start your reading journey today!</p>
+        ₹60 per month subscription <br>
+        Browse from our collection and start your reading journey today!</p>
     </section>
 
     <section id="books">
@@ -40,91 +40,6 @@
     <p>&copy; 2024 Leaflet. All rights reserved.</p>
   </footer>
 
-  <script>
-  const books = [
-    { title: 'Norwegian Wood', author: 'Haruki Murakami' },
-    { title: 'Divergent Series Pack', author: 'Veronica Roth' },
-    { title: 'Three Thousand Stitches: Ordinary People', author: 'Sudha murthy' },
-    { title: 'To Kill a Mockingbird', author: 'Harper Lee' },
-    { title: 'Harry Potter and the Cursed Child', author: 'J. K. Rowling, Jack Thorne, and John Tiffany'
- },
-    { title: 'Emma', author: 'Jane Austen' }
-  ];
-
-  const bookList = document.getElementById('book-list');
-
-  function displayBooks() {
-    books.forEach(book => {
-      const li = document.createElement('li');
-      li.textContent = `${book.title} by ${book.author}`;
-      li.classList.add('book-item');
-      bookList.appendChild(li);
-    });
-  }
-
-  displayBooks();
-  </script>
-
-  <style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #f9f9f9;
-  }
-
-  header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  main {
-    padding: 1rem 2rem;
-  }
-
-  h1, h2 {
-    margin: 0.5rem 0;
-  }
-
-  section {
-    margin: 1.5rem 0;
-    padding: 1rem;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
-  .book-item {
-    margin: 0.5rem 0;
-    padding: 0.75rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    background-color: #f4f4f4;
-    transition: transform 0.2s ease-in-out;
-  }
-
-  .book-item:hover {
-    transform: scale(1.05);
-    background-color: #e8f5e9;
-  }
-
-  footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #4CAF50;
-    color: white;
-    margin-top: 2rem;
-  }
-  </style>
+  <script src="script.js"></script>
 </body>
 </html>
-
